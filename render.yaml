@@ -3,4 +3,4 @@ services:
     name: eletricidade
     runtime: static
     buildCommand: ""
-    staticPublishPath: .
+    staticPublishPath: ./public
