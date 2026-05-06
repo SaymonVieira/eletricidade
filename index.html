@@ -6283,12 +6283,7 @@ updateActiveNav();
 
 <script>
 (function() {
-  // API Key - configure via URL param ?key=YOUR_KEY or set in localStorage
-  let GROQ_API_KEY = new URLSearchParams(window.location.search).get('key') || localStorage.getItem('groq_key') || '';
-  if (!GROQ_API_KEY) {
-    const saved = prompt('Configure sua API key do Groq (gratuita em console.groq.com):');
-    if (saved) { localStorage.setItem('groq_key', saved); GROQ_API_KEY = saved; }
-  }
+  const GROQ_API_KEY = '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';
   const GROQ_MODEL = 'llama-3.3-70b-versatile';
   const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
